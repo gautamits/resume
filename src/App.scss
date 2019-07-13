@@ -1,0 +1,118 @@
+$theme-color:rgb(55,61,72);
+* {
+  color: $theme-color;
+}
+
+.main-wrapper {
+  padding: 0 80px;
+  background: rgba(0,0,0,0.05);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap:70px;
+}
+
+.user-info-wrapper {
+  display:flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+}
+
+.user-name {
+  font-size: 24px;
+}
+
+.user-title {
+  font-size: 20px;
+}
+
+.profile-pic {
+  width:60px;
+  height:60px;
+  background: $theme-color;
+  border-radius: 50%;
+  margin-right:8px;
+}
+
+section {
+  text-align: left;
+  padding: 16px 0;
+}
+
+.section-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  margin-bottom: 4px;
+}
+
+.section-icon {
+  width:40px;
+  height:40px;
+  background:$theme-color;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.section-title {
+  font-size: 20px;
+}
+
+.section-content {
+  strong {
+    display: block;
+    margin-bottom: 4px;
+  }
+  text-align: left;
+  font-size: 16px;
+  margin-bottom:16px;
+}
+
+.experiences {
+  margin:40px 0;
+  .experiences-title {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight:700;
+    margin-bottom: 16px;
+  }
+  .experience{
+    .profile-header {
+      display: grid;
+      grid-template-columns: 150px auto;
+      .left-experience {
+        font-size:14px;
+      }
+      .right-experience {
+        line-height: 1.4;
+        .experience-title {
+          text-transform: capitalize;
+          font-size: 20px;
+          font-weight: 500;
+        }
+        .experience-venue {
+          text-transform: capitalize;
+          font-weight: 500;
+        }
+      }
+    }
+    .accomplishments ul{
+      margin-left: 150px;
+      margin-block-start: unset;
+      padding-inline-start: unset;
+      .accomplishment {
+        line-height: 1.4;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

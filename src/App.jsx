@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+import '@fortawesome/fontawesome-free/css/all.css'
 
 function App() {
 
@@ -14,12 +15,12 @@ function App() {
           venue:'magicpin',
           accomplishments:[
             'Working in merchant product team responsible for engagement and retention of acquired merchants.',
-            'Work involves development of new features as well as supporting already existing code base. From UI in React, Redux and Thunk to creation of wrapper APIs in expressJS I work o react, express, django and go.',
+            'Work involves development of new features as well as supporting already existing code base. From UI in React, Redux and Thunk to creation of wrapper APIs in expressJS I work on react, express, django and go.',
             'Responsible for managing complete software development lifecycle using jira, pentaho and agile methodology.',
             'Writing backend APIs for data retrival from various date sources including mysql, cassandra elastic and solr.',
             'Creation and monitoring business analytics funnels using google analytics and home grown graphing system.',
             'Management of merchant crons for sending business summary mails using python and Jinja2.',
-            'Management and optimisation of bi monthly customer wallet summary mailer (3.5 M users).'
+            'Management and optimisation of bi monthly customer wallet summary mailer (5 M users).'
           ]
         },
         {
@@ -107,24 +108,24 @@ function App() {
 
               </div>
               <div className="section-content">
-                <strong>Address</strong>
+                <strong><i className="fa fa-address-card"></i>Address</strong>
                 Goriapur, Nauperwa, Jaunpur UP 222109
               </div>
               <div className="section-content">
-                <strong>Phone</strong>
-                +91-9695790396
+                <strong><i className="fa fa-phone"></i>Phone</strong>
+                <tel>+91-9695790396</tel>
               </div>
               <div className="section-content">
-                <strong>E-mail</strong>
-                gautamamits95@gmail.com
+                <strong><i className="fa fa-envelope"></i>E-mail</strong>
+                <email>gautamamits95@gmail.com</email>
               </div>
               <div className="section-content">
-                <strong>Date of Birth</strong>
+                <strong><i className="fa fa-calendar"></i>Date of Birth</strong>
                 May 10, 1995
               </div>
               <div className="section-content">
-                <strong>LinkedIn</strong>
-                https://www.linkedin.com/in/gautamits
+                <strong><i className="fa fa-linkedin"></i>LinkedIn</strong>
+                <a href="https://www.linkedin.com/in/gautamits">https://www.linkedin.com/in/gautamits</a>
               </div>
             </article>
           </section>

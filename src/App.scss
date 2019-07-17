@@ -63,6 +63,9 @@ section {
     display: block;
     margin-bottom: 4px;
   }
+  .fa{
+    margin-right: 4px;
+  }
   text-align: left;
   font-size: 16px;
   margin-bottom:16px;
@@ -80,6 +83,7 @@ section {
     .profile-header {
       display: grid;
       grid-template-columns: 150px auto;
+      margin-bottom: 12px;
       .left-experience {
         font-size:14px;
       }
@@ -108,11 +112,22 @@ section {
   }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media all and (max-width: 768px){
+  .main-wrapper {
+    grid-template-columns: calc( 100% - 32px );
+    padding: unset;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+  .experiences {
+    .experience {
+      margin-top: 24px;
+      .accomplishments ul{
+          margin-left:unset;
+          padding-inline-start: 16px;
+      }
+      .profile-header {
+        grid-template-columns: calc( 100% - 32px );
+      }
+    }
   }
 }

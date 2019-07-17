@@ -2,12 +2,15 @@
   "name": "resume",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gautamits.github.io/resume",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
   "scripts": {
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -29,6 +32,8 @@
     ]
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0"
   }
